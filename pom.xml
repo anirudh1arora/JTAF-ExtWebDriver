@@ -290,17 +290,6 @@
 		<!-- project's sole purpose is to provide standardized access to Selenium Web Driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
-			<version>2.53.0</version>
-			<type>pom</type>
-		</dependency>
-		<dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-htmlunit-driver</artifactId>
-            <version>2.52.0</version>
-        </dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-support</artifactId>
 			<version>3.4.0</version>
 		</dependency>
