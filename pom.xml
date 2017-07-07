@@ -67,7 +67,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <org.slf4j.version>1.7.8</org.slf4j.version>
+		<org.slf4j.version>1.7.8</org.slf4j.version>
 	</properties>
 	<build>
 		<plugins>
@@ -290,13 +290,24 @@
 		<!-- project's sole purpose is to provide standardized access to Selenium Web Driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.53.0</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-htmlunit-driver</artifactId>
+            <version>2.52.0</version>
+        </dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-support</artifactId>
 			<version>3.4.0</version>
 		</dependency>
 		<dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>htmlunit-driver</artifactId>
-        <version>2.26</version>
+        <version>2.27</version>
     </dependency>  
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
