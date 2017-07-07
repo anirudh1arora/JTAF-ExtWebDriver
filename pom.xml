@@ -290,24 +290,30 @@
 		<!-- project's sole purpose is to provide standardized access to Selenium Web Driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-support</artifactId>
+			<artifactId>selenium-server</artifactId>
 			<version>3.4.0</version>
 		</dependency>
 		<dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>htmlunit-driver</artifactId>
-        <version>2.27</version>
-    </dependency>  
-		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
+			<artifactId>selenium-support</artifactId>
 			<version>3.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-leg-rc</artifactId>
 			<version>3.4.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+		<dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>htmlunit-driver</artifactId>
+            <version>2.26</version>
+        </dependency> 
 		<!-- tagsoup for view xpath tags easier -->
 		<dependency>
 			<groupId>org.ccil.cowan.tagsoup</groupId>
@@ -354,11 +360,6 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>15.0</version>
 		</dependency>
 	</dependencies>
 	<distributionManagement>
