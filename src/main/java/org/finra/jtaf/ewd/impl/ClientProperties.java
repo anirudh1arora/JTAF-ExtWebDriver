@@ -68,7 +68,7 @@ public class ClientProperties {
     private final int maxDownloadWaitTime;
     private final String downloadFolder;
     private final String uploadFolder;
-
+    private final String webDriverGeckoDriver;
     private final String maxAllowedSessions;
     private final String binaryPath;
     private final String webDriverIEDriver;
@@ -194,6 +194,8 @@ public class ClientProperties {
         webDriverIEDriver = load("webdriver.ie.driver", null, "Path to IEDriverServer.exe");
         webDriverChromeDriver = load("webdriver.chrome.driver", null,
                 "Path to chromedriver executable");
+        webDriverGeckoDriver = load("webdriver.gecko.driver", null,
+                "Path to GeckoDriver executable");
 
         String uploadFolderStr = load("upload.folder", null,
                 "Default folder to grab files from to perform upload");
@@ -528,7 +530,9 @@ public class ClientProperties {
     public String getWebDriverIEDriver() {
         return webDriverIEDriver;
     }
-
+    public String getWebDriverGeckoDriver() {
+    	return webDriverGeckoDriver;
+    }
     /**
      * Returns the path to chromedriver.exe.
      * 
